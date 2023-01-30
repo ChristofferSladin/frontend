@@ -64,3 +64,16 @@ a{
         #header .container .menu-icons .link-circle{
             margin-left: 10px;
         }
+
+.ShowCase{
+    display:flex;
+    background-color: lavender;
+    border-radius: 10px;
+    border:#222529;
+    height: 50px;
+}
+    .pictures{
+    justify-content: space-between;
+    display: flex;
+    
+    }
