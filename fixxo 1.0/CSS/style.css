@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+html, body{
+    font-family: 'Poppins', sans-serif;
+    color:#222529;
+}
+
+
+header{
+
+}
+
+header .container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1680px;
+}
+
+header .logotype {
+    flex: 1;
+    font-size: 35px;
+    font-weight: 700;
+    
+}
+
+header .menu-links{
+    flex: 1;
+    display: none;
+    font-weight: 500;
+}
+
+header .menu-links .menu-link{
+flex: 1;
+color:#222529;
+text-decoration: none;
+margin-left: 12px;
+margin-right: 12px;
+}
+
+header .menu-links .menu-link:hover,
+header .menu-links .menu-link.active{
+color:#ff7373;
+text-decoration: none;
+}
+@media(min-width:992px){
+
+    header .menu-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+header .menu-link-icons{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .menu-link-icons .menu-link{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #222529;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+    margin: 5px;
+}
+
+header .menu-link-icons .menu-link:hover,
+header .menu-link-icons .menu-link.active{
+background-color: #222529;
+text-decoration: none;
+color: #ffffff;
+
+
+}
+
+/* SHOWCASE */
+.title1{
+font-size: 65px;
+font-weight: 900;
+line-height: 1;
+margin:32px;
+}
+
+.title2{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1;
+    margin:16px;
+}
+
+.title3{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    margin:16px;
+}
+
+.showcase{
+    display: flex;
+    flex: space-between;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    
+
+}
+.showcase .content{
+    
+   
+}
+
+.image{
+    margin-right: 50px;
+    
+}
