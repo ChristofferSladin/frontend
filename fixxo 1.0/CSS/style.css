@@ -152,7 +152,7 @@ margin:32px;
 @media(min-width:768px){
 
     .showcase .content{
-        margin-left: 200px;
+        /* margin-left: 200px; */
     }
     .showcase .image-under{
         

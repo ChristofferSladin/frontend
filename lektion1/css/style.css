@@ -1,0 +1,19 @@
+#parent{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+border: 1px solid black;
+/* height: 50px; */
+width: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: grey;
+
+}
+
+.bg-blue{
+    color: blue;
+}
