@@ -170,16 +170,22 @@ header .menu-icons {
     grid-template-areas:
       "product product"
       "product product";
+      padding: 50px;
+      gap: 10px;
 
 }
 .product{
-    display: grid;
+    display: inline-block;
     text-align: center;
     justify-content: center;
     padding: 1rem;
 }
 .product p{
     background-color: #f3f3f3;
+}
+
+.product img:hover{
+
 }
 
 @media (max-width: 768px) {

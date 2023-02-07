@@ -1,0 +1,22 @@
+
+.footer {
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "phone-number company-name"
+    "adress phone-hours";
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ff7373;
+  color: #222529;
+  padding-top: 15px;
+}
+
+.input-form{
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  border: 5px #222529;
+}
