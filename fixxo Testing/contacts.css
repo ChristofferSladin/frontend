@@ -1,22 +1,48 @@
+html, body{
+  min-height: 100vh;
+  display: flex;
+    flex-direction: column;
+}
+
 
 .footer {
     display: grid;
     grid-template-areas: 
     "title title"
     "phone-number company-name"
-    "adress phone-hours";
-  position: fixed;
+    "phone-hours adress";
   left: 0;
-  bottom: 0;
+  margin-top: 100vh;
   width: 100%;
   background-color: #ff7373;
   color: #222529;
   padding-top: 15px;
 }
 
+.footer .title{
+  text-decoration: underline;
+}
+
+.title{grid-area: title;}
+
+.adress{grid-area: adress;}
+
+.company-name{grid-area: company-name;}
+
+.phone-number{grid-area: phone-number;}
+
+.phone-hours{grid-area: phone-hours;}
+
 .input-form{
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 50px;
   border: 5px #222529;
+}
+
+.contact-message{
+  display: grid;
+  justify-content: center;
+  padding-top: 15px;
+  text-align: center;
 }
