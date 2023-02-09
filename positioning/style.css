@@ -1,0 +1,44 @@
+/* .box{
+    height:150px;
+    width: 150px;
+    background-color: bisque;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#parent{
+    border: 1px solid black;
+    padding:20px;
+    margin: 20px;
+    position: relative;
+
+}
+
+#child1{
+    position: static;
+    position: relative;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+}
+#child2{
+    
+} */
+
+#upparrow {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    right: 20px;
+    bottom: 20px;
+
+
+}
