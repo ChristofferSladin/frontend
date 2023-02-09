@@ -189,8 +189,8 @@ header .menu-icons {
     background-color: #f3f3f3;
 }
 
-.product img:hover{
-
+.product:hover{
+border: 1px solid black;
 }
 
 /* MEDIA ---------------------------------------------- */
