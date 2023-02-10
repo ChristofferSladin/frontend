@@ -1,32 +1,25 @@
-/* .box{
-    height:150px;
-    width: 150px;
-    background-color: bisque;
+ .box{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
     border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+#grandparent{
+
 }
 
 #parent{
-    border: 1px solid black;
-    padding:20px;
-    margin: 20px;
-    position: relative;
-
+    
 }
 
 #child1{
-    position: static;
-    position: relative;
-    position: absolute;
 
-    top: 0;
-    left: 0;
 }
+
 #child2{
     
-} */
+} 
 
 #upparrow {
     position: absolute;

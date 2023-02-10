@@ -4,7 +4,7 @@ html,
 body {
   font-family: "Poppins", sans-serif;
   color: #222529;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -190,7 +190,7 @@ header .menu-icons {
 }
 
 .product:hover{
-border: 1px solid black;
+border: 0.1px solid black;
 }
 
 /* MEDIA ---------------------------------------------- */

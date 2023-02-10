@@ -1,0 +1,32 @@
+@import "pageloader.css";
+
+
+.dot{
+    height: 15px;
+    width: 15px;
+    background-color: slategray;
+    border-radius: 50%;
+    margin: 5px;
+
+    animation: bounds 0.5s infinite alternate;
+}
+
+.page-loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#dot1{
+    animation-delay: 0s;
+}
+
+#dot2{
+    animation-delay: 0.1s;
+}
+
+#dot3{
+    animation-delay: 0.2s;
+}
