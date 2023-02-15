@@ -51,7 +51,7 @@ button{
   margin-bottom: 16px;
 }
 
-/* HEADER */
+                                                    /* HEADER */
 
 header{
   position: sticky;
@@ -148,9 +148,7 @@ header #menu {
 }
 
 
-
-
-/* SHOWCASE */
+                                                     /* SHOWCASE */
 
 .showcase {
   background: #f3f3f3;
@@ -175,8 +173,7 @@ header #menu {
   text-align: center;
 }
 
-
-/* PRODUCTS */
+                                                        /* PRODUCTS */
 
 .featured-products{
 
@@ -273,6 +270,8 @@ color: #616365;
   justify-content: center;
   align-items: center;
 }
+
+                                                    /* MEDIA */
 
 @media (min-width: 992px) {
   header #toggle-icon {
