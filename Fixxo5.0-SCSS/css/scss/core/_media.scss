@@ -35,3 +35,30 @@ $minmaxwidth-xxxl: 1680px;
         @content
     }
 }
+
+
+@mixin bp-md {
+    @media (min-width: $breakpoint-md) {
+        @content
+    }
+}
+@mixin bp-lg {
+    @media (min-width: $breakpoint-lg) {
+        @content
+    }
+}
+@mixin bp-xl {
+    @media (min-width: $breakpoint-xl) {
+        @content
+    }
+}
+@mixin bp-xxl {
+    @media (min-width: $breakpoint-xxl) {
+        @content
+    }
+}
+@mixin bp-xxxl {
+    @media (min-width: $breakpoint-xxxl) {
+        @content
+    }
+}

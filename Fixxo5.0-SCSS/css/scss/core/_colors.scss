@@ -13,6 +13,8 @@ $bg-transparent-light-1: rgba(255, 255, 255, 0.98);
 $color-shadow-1: rgba(0, 0, 0, 0.10);
 $color-shadow-2: rgba(112,112,112, 0.4);
 
+$color-linear-gradient: linear-gradient(90deg, #f3f3f3 0%, #f5f5f5 100%);
+
 @mixin default-colors {
     background-color: $color-light-1;
     color: $color-dark-2;

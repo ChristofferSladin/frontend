@@ -41,7 +41,9 @@ header {
         grid-area: menuicons;
     }
     #toggle-icon {
-        grid-area: toggleicon;   
+        grid-area: toggleicon;
+        margin-top: 0;
+        justify-content: flex-end;
 
         @include lg {
             display: none;
