@@ -1,52 +1,6 @@
 
 /* showcase */
 
-@media (min-width: 992px) {
-    .title-1 {
-        font-size: 3em;
-    }
-    .title-2 {
-        font-size: 2em;
-    }
-    .title-3 {
-        font-size: 1.1em;
-    }
-
-
-    .showcase .container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "column1 column2";
-    }
-
-    .showcase .column-1 .content {
-        text-align: left; 
-    }
-
-    .showcase .column-2 {
-        display: block;
-    }
-
-    .showcase .column-2 img {    
-        height: 550px;
-        width: auto;
-    }
-}
-
-@media (min-width: 1400px) {
-    .title-1 {
-        font-size: 4em;
-    }
-    .title-2 {
-        font-size: 2.5em;
-    }
-    .title-3 {
-        font-size: 1.5em;
-    }
-    
-    .showcase .column-2 img {
-        height: 700px;
-    }
-}
 
 
 

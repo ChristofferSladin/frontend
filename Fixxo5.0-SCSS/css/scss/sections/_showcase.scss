@@ -2,12 +2,22 @@
     background: $color-light-3;
     background: $color-linear-gradient;
 
+    .title-1{
+        font-size: 2.5em;
+    }
+    .title-2{
+        font-size: 1.5em;
+    }
+    .title-3{
+        font-size: 1em;
+    }
+
     .btn-theme{
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
-    .container{
+    .container {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "column1";
@@ -28,12 +38,14 @@
         display: none;
 
         img{
-            height: 100%;
+            height: 550px;
             width: auto;
             object-fit: fit;
         }
     }
+    
 }
+
 
 @include lg{
     .showcase{
@@ -46,5 +58,30 @@
         .title-3{
             font-size: 1.1;
         }
+        .column-2{
+            display: block;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "column1 column2";
+        }
     }
+}
+
+@include xxxl{
+    .title-1 {
+        font-size: 4em;
+    }
+    .title-2 {
+        font-size: 2.5em;
+    }
+    .title-3 {
+        font-size: 1.5em;
+    }
+    
+    .showcase .column-2 img {
+        height: 700px;
+    }
+    
 }
