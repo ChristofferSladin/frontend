@@ -15,6 +15,76 @@
             grid-template-columns: 1fr;
             gap: 30px;
 
+            .product-card-image-container{
+
+                img{
+                    width: 50%;
+                    height: 50%;
+                }
+
+                position: relative;
+                max-height: 100%;
+
+                .menu-icons{
+                    opacity: 0;
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;  
+                }
+
+                &:hover{
+                    .btn-theme{
+                        transition: opacity 0.2s;
+                        opacity: 100%;
+                    }
+
+                    .menu-icons{
+                        opacity: 100%;
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;  
+    
+                        .menu-link{
+                            height: 50px;
+                            width: 50px;
+                            font-size: 22px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: #ffffff;
+                            color:#222529;
+                            border-radius: 50%;
+                            text-decoration: none;
+                            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+                            margin-left: 1rem;
+                            transition: background-color 0.25s, color 0.20s;
+                            margin-bottom: 1rem;
+    
+                            &:hover,
+                            &:active{
+                                background-color: #222529;
+                                color: #ffffff;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+
+                
+
+                
+            }
+
+            .btn-theme {
+                opacity: 0%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                max-height: 50%;
+                width: 100%;
+                text-align: center;
+            }
+
             .product-card{
                 margin: 15px;
                 
@@ -66,35 +136,7 @@
                         object-fit: cover;
                     }
 
-                    .menu-icons{
-                        position: absolute;
-                        top: 15px;
-                        right: 15px;  
-
-                        .menu-link{
-                            height: 50px;
-                            width: 50px;
-                            font-size: 22px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            background-color: #ffffff;
-                            color:#222529;
-                            border-radius: 50%;
-                            text-decoration: none;
-                            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
-                            margin-left: 1rem;
-                            transition: background-color 0.25s, color 0.20s;
-                            margin-bottom: 1rem;
-
-                            &:hover,
-                            &:active{
-                                background-color: #222529;
-                                color: #ffffff;
-                                text-decoration: none;
-                            }
-                        }
-                    }
+                    
 
                 }
             }
@@ -106,7 +148,7 @@
 @include md{
     .featured-products {
         .product-grid{
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
 
             #product-container{
                 display: grid;
@@ -114,8 +156,31 @@
                     "product0 product1"
                     "product2 product3"
                     "product4 product5"
-                    "product6 product7" !important;
-                    border: 1px solid black;
+                    "product6 product7";
+
+                    .product-card-image-container{
+
+                        position: relative;
+                        max-height: 100%;
+
+                        &:hover{
+                            .btn-theme{
+                                transition: opacity 0.2s;
+                                opacity: 100%;
+                            }
+                        }
+                    }
+
+                    .btn-theme {
+                        opacity: 0%;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        max-height: 50%;
+                        width: 100%;
+                    }
+                    
+                    
             
                 .product-card{
                     
@@ -178,45 +243,38 @@
                     display: grid;
                     grid-template-areas: 
                     "product0 product1 product2 product3" 
-                    "product4 product5 product6 product7" !important;
-                    border: 1px solid black;
-
-                    #product-0{
-                        grid-area: product0;
-
-                    }
-                    #product-1{
-                        grid-area: product1;
-                        
-                    }
-                    #product-2{
-                        grid-area: product2;
-                        
-                    }
-                    #product-3{
-                        grid-area: product3;
-                        
-                    }
-                    #product-4{
-                        grid-area: product4;
-
-                    }
-                    #product-5{
-                        grid-area: product5;
-                        
-                    }
-                    #product-6{
-                        grid-area: product6;
-                        
-                    }
-                    #product-7{
-                        grid-area: product7;
-                        
-                    }
+                    "product4 product5 product6 product7";
                     
 
                     .product-card{
                         
+                        justify-self: center;
+                        align-self: top;
+                        
+                        #product-0{
+                            grid-area: product0;
+                        }
+                        #product-1{
+                            grid-area: product1;
+                        }
+                        #product-2{
+                            grid-area: product2;
+                        }
+                        #product-3{
+                            grid-area: product3;
+                        }
+                        #product-4{
+                            grid-area: product4;
+                        }
+                        #product-5{
+                            grid-area: product5;
+                        }
+                        #product-6{
+                            grid-area: product6;
+                        }
+                        #product-7{
+                            grid-area: product7;
+                        }
                         .product-card-img .product-card-menu{
                             opacity: 0%;
                             transition: all 0.15s;
@@ -227,7 +285,6 @@
                                 
                         }
                     } 
-
                 }     
             }
         }
