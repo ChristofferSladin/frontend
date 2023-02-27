@@ -59,7 +59,36 @@ function getFeaturedProducts() {
       });
   }
   
+// Get the button:
+let mybutton = document.getElementById("button-scroll");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document with an interval of 0.5 seconds
+function topFunction() {
+  let scrollstep = window.pageYOffset / 20;
+
+  let delayInMilliseconds = 150; 
   
+  // Scroll gradually at every requestAnimationFrame
+  setTimeout(function() {
+    const scrollinterval = setInterval(() => {
+      window.scrollBy(0, -scrollstep);
+      if (window.pageYOffset === 0) clearInterval(scrollinterval);
+    }, 15)
+  }, delayInMilliseconds);
+}
+
+
+mybutton.addEventListener('click', topFunction);
 
 
