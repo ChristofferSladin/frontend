@@ -4,12 +4,18 @@ $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
 $breakpoint-xxxl: 1920px;
 
+$minmaxwidth-mobile: 270px;
 $minmaxwidth-md: 720px;
 $minmaxwidth-lg: 960px;
 $minmaxwidth-xl: 1140px;
 $minmaxwidth-xxl: 1320px;
 $minmaxwidth-xxxl: 1680px;
 
+@mixin mobile {
+    @media (min-width: $minmaxwidth-mobile){
+        @content
+    }
+}
 @mixin md {
     @media (min-width: $minmaxwidth-md) {
         @content
