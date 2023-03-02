@@ -1,0 +1,35 @@
+.center-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+input, label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+input:focus{
+    border: 1px solid gray;
+}
+
+.password-box{
+    position: relative;
+}
+
+.password-box i{
+    color: grey;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
