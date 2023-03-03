@@ -1,41 +1,47 @@
-.flash-sale{
 
-    width: 100%;
-    margin-top: 100px;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+// @include lg{
 
-    
-    .flash-sale-img{
-        height: 250px;
-        width: 250px;
-        border: 2px solid red;
+//     .flash-sale{
 
-    }
-}
-
-@include mobile{
-    .flash-sale{
-
-        width: 100%;
-        margin-top: 100px;
+//         width: 100%;
+//         margin-top: 100px;
         
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 20px;
-        padding-right: 20px;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         padding-left: 20px;
+//         padding-right: 20px;
     
         
-        .flash-sale-img{
-            height: 200px;
-            width: 50px;
-            border: 2px solid red;
+//         .flash-sale-img{
+//             height: 250px;
+//             width: 250px;
+//             border: 2px solid red;
     
-        }
-    }
-}
+//         }
+//     }
+// }
+
+
+
+// @include mobile{
+//     .flash-sale{
+
+//         width: 100%;
+//         margin-top: 100px;
+        
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         padding-left: 20px;
+//         padding-right: 20px;
+    
+        
+//         .flash-sale-img{
+//             height: 200px;
+//             width: 50px;
+//             border: 2px solid red;
+    
+//         }
+//     }
+// }
