@@ -1,47 +1,82 @@
+.flash-sale{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 
-// @include lg{
+    .flash-sale-img{
+        display: flex;
+        justify-content: center;
+        width: 600px;
+        height: 417px;
+    }
 
-//     .flash-sale{
+    #flash-sale-box{
+        background-color: $color-light-3;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-//         width: 100%;
-//         margin-top: 100px;
-        
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         padding-left: 20px;
-//         padding-right: 20px;
-    
-        
-//         .flash-sale-img{
-//             height: 250px;
-//             width: 250px;
-//             border: 2px solid red;
-    
-//         }
-//     }
-// }
+        .box-bg{
 
+            .box-border{
+                height: 377px;
+                width: 560px;
+                border: 10px solid $color-theme;
+                position: relative;
 
+                .box-title{
+                    margin-top: 50px;
+                    font-size: 45px;
+                    font-weight: bold;
+                    line-height: 55px;
+                    font-style: normal;
+                    text-align: left;
+                    color: #222529;
+                    text-align: center;
+                }
+                .box-description{
+                    margin-top: 10px;
+                    text-align: center;
 
-// @include mobile{
-//     .flash-sale{
+                }
+                #flash-sale-button{
+                    position: absolute;
+                    bottom: 15%;
+                    right: 25%;
+                    color: $color-dark-1;
+                    background-color: $color-light-1;
+                    border: 1px solid $color-dark-1;
 
-//         width: 100%;
-//         margin-top: 100px;
-        
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         padding-left: 20px;
-//         padding-right: 20px;
-    
-        
-//         .flash-sale-img{
-//             height: 200px;
-//             width: 50px;
-//             border: 2px solid red;
-    
-//         }
-//     }
-// }
+                    &:hover{
+                        color: $color-light-1;
+                        background-color: $color-dark-1;
+                        border: 1px solid $color-light-1;
+                        transition: all 0.3s;
+                    }
+                }
+                #flash-sale-button::before{
+                    content: "";
+                    border-top: 2px solid $color-dark-1;
+                    border-left: 2px solid $color-dark-1;
+                    position: absolute;
+                    bottom: 12px;
+                    right: 12px;
+                    height: 25px;
+                    width: 25px;
+                }
+                #flash-sale-button::after{
+                    content: "";
+                    border-bottom: 2px solid $color-dark-1;
+                    border-right: 2px solid $color-dark-1;
+                    position: absolute;
+                    bottom: 12px;
+                    right: 12px;
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+        }
+    } 
+}

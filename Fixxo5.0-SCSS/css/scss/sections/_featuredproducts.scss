@@ -1,5 +1,7 @@
 .featured-products{
     margin-top: 40px;
+    margin: 0;
+    padding: 0;
     .container{
         max-width: 1110px;
         > .title{
@@ -12,9 +14,8 @@
 
         //box-shadow: 10px 10px 8px 10px #888888;
         .product-grid{
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
+            display: flex;
+            justify-content: center;
 
             .product-card-image-container{
                 display: flex;
