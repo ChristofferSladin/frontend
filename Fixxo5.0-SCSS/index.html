@@ -11,7 +11,7 @@
     <title>Fixxo.</title>
 </head>
 
-<body onload="getFeaturedProducts();">
+<body onload="getFeaturedProducts(), getNewProducts(), getNullProducts();">
   
     <!-- header -->
     <header>
@@ -38,7 +38,6 @@
                     </a>
                 </nav>
             </div>
-
 
             <div id="toggle-icon" class="menu-icons">
                 <button class="menu-link" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -71,13 +70,7 @@
       <div class="container">
         <div class="title">Featured Products</div>
         <div class="product-grid">
-
-            <div id="product-container">
-
-              
-           
-            </div>
-            
+            <div id="product-container"></div>
         </div>
       </div>
   </section>
@@ -85,7 +78,6 @@
   <!-- FLASH SALE -->
 
   <section class="flash-sale">
-    
       <div id="office-style">
         <div class="flash-sale-img">
           <img src="images/office-style.png" alt="office style">
@@ -97,7 +89,9 @@
             <div class="box-border">
               <div class="box-title">50% Offer</div>
               <p class="box-description">Men för att ni ska se varifrån allt detta födda misstag av dem som anklagar njutningen och prisar smärtan, är det hela öppet och just de saker som av den uppfinnaren</p>
-              <a href="#" id="flash-sale-button" class="btn-theme">FLASH SALE</a>
+              <a href="#" id="flash-sale-button" class="btn-theme">
+                <div class="flash-button-text">FLASH SALE</div>
+              </a>
             </div>
           </div>
         </div>
@@ -109,47 +103,24 @@
       </div>
   </section>
   
+  <!-- NEW PRODUCTS -->
 
-    <!-- featured products OLD -->
+  <section class="new-products">
+    <div class="new-products-container">
+      <div class="new-products-box1"></div>
+    <div id="new-products-grid" class="new-products-collection"></div>
+  </div>
+  </section>
 
-    <!-- <section class="featured-products">
-      <div class="container">
-        <div class="title">Featured Products</div>
-        <div class="product-grid">
-          <div class="product-card">
-            <div class="product-card-img">
-                <img src="images/products/blue-tshirt.png" alt="">
-                <div class="product-card-menu">
-                    <nav class="menu-icons">
-                        <a class="menu-link" href="#"><i class="fa-regular fa-code-compare"></i></a>
-                        <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
-                        <a class="menu-link" href="#"><i class="fa-regular fa-bag-shopping"></i></a>                   
-                    </nav>
-                    <a href="#" class="btn-theme">QUICK VIEW</a>
-                </div>
-            </div>
-            <div class="product-card-body">
-              <p class="product-card-category">T-shirts</p>
-              <p class="product-card-title">Blue Modern T-Shirt</p>
-              <div class="product-card-rating">
-                <i class="fa-solid fa-sharp fa-star"></i>
-                <i class="fa-solid fa-sharp fa-star"></i>
-                <i class="fa-solid fa-sharp fa-star"></i>
-                <i class="fa-regular fa-sharp fa-star"></i>
-                <i class="fa-regular fa-sharp fa-star"></i>
-              </div>
-              <p class="product-card-price">$15.00</p>
-            </div>
-          </div>
+  <!-- POPULAR PRODUCTS -->
 
-          
-        </div>
-      </div>
-    </section> -->
+  <section class="popular-products">
+    <div class="popular-products-box1"></div>
+  </section>
 
 
     <button onclick="topFunction()" id="button-scroll" class="totop-arrow"><i class="fa-solid fa-arrow-up"></i></button>
-    <div style="height: 400px;"></div>
+    
     <script src="js/script.js"></script>
 </body>
 </html>

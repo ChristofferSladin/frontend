@@ -3,12 +3,15 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    
+
 
     .flash-sale-img{
         display: flex;
         justify-content: center;
-        width: 600px;
-        height: 417px;
+        width: 400px;
+        height: 317px;
+        margin: 20px;
     }
 
     #flash-sale-box{
@@ -21,13 +24,13 @@
         .box-bg{
 
             .box-border{
-                height: 377px;
-                width: 560px;
+                height: 277px;
+                width: 360px;
                 border: 10px solid $color-theme;
                 position: relative;
 
                 .box-title{
-                    margin-top: 50px;
+                    margin-top: 20px;
                     font-size: 45px;
                     font-weight: bold;
                     line-height: 55px;
@@ -39,15 +42,26 @@
                 .box-description{
                     margin-top: 10px;
                     text-align: center;
+                    font-size: 13px;
 
                 }
                 #flash-sale-button{
+                    width: 45px;
+                    height: 10px;
                     position: absolute;
-                    bottom: 15%;
+                    bottom: 13%;
                     right: 25%;
                     color: $color-dark-1;
                     background-color: $color-light-1;
                     border: 1px solid $color-dark-1;
+                    font-size: 10px;
+                    
+                    .flash-button-text{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                }
 
                     &:hover{
                         color: $color-light-1;
@@ -55,7 +69,8 @@
                         border: 1px solid $color-light-1;
                         transition: all 0.3s;
                     }
-                }
+
+                    
                 #flash-sale-button::before{
                     content: "";
                     border-top: 2px solid $color-dark-1;
@@ -63,8 +78,8 @@
                     position: absolute;
                     bottom: 12px;
                     right: 12px;
-                    height: 25px;
-                    width: 25px;
+                    height: 15px;
+                    width: 15px;
                 }
                 #flash-sale-button::after{
                     content: "";
@@ -73,8 +88,8 @@
                     position: absolute;
                     bottom: 12px;
                     right: 12px;
-                    height: 25px;
-                    width: 25px;
+                    height: 15px;
+                    width: 15px;
                 }
             }
         }

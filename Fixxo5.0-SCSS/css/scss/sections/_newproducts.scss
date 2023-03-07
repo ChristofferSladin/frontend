@@ -1,0 +1,87 @@
+.new-products{
+    display: flex;
+    justify-content: center;
+
+    border: 2px solid red;
+
+
+    .new-products-container{
+        margin-top: 100px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        .new-products-box1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: rgb(138, 138, 255);
+            margin-right: 30px;
+            width: 560px;
+            height: 664px;
+            
+        }
+
+        #new-products-grid{
+            
+            display: grid;
+            grid-template-areas:
+            "product0 product1 product2"
+            "product3 product4 product5";
+            gap: 20px;
+            
+            .product-card{
+                width: 255px;
+                height: 320px;
+                
+            }
+
+            .product-card-image-container{
+                width: 255px;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+    
+                img{
+                    max-width: 255px;
+                    max-height: 210px;
+                }
+
+            }
+            .product-card-category{
+                font-size: 16px;
+    
+            }
+            .product-card-title{
+                font-size: 16px;
+            }
+            .product-card-rating{
+                color: $color-theme;
+                font-size: 16px;
+            }
+            .product-card-price{
+                font-size: 16px;
+            }
+
+            #null-product-0{
+                grid-area: product0;
+            }
+            #null-product-1{
+                grid-area: product1;
+            }
+            #new-product-0{
+                grid-area: product2;
+            }
+            #new-product-1{
+                grid-area: product3;
+            }
+            #new-product-2{
+                grid-area: product4;
+            }
+            #new-product-3{
+                grid-area: product5;
+            }
+        }
+    }
+}

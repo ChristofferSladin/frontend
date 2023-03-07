@@ -42,6 +42,7 @@
                     height: 30%;
                     width: 100%;
                     text-align: center;
+                    transition: background-color 0.25s !important;
                 }
                 .btn-theme{
                     display: flex;
@@ -52,10 +53,8 @@
                 }
                     &:hover{
                         #btn-quick-view{
-                            
                             transition: opacity 0.2s;
                             opacity: 100%;
-
                         }
                         .menu-icons{
                             display: block;
