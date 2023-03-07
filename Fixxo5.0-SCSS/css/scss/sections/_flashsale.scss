@@ -1,5 +1,5 @@
 .flash-sale{
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -16,6 +16,7 @@
 
     #flash-sale-box{
         background-color: $color-light-3;
+            
             
             display: flex;
             justify-content: center;
@@ -45,24 +46,13 @@
                     font-size: 13px;
 
                 }
-                #flash-sale-button{
-                    width: 45px;
-                    height: 10px;
+                #flash-sale-button {
+                    width: 170px;
+                    height: 50px;
                     position: absolute;
                     bottom: 13%;
                     right: 25%;
-                    color: $color-dark-1;
-                    background-color: $color-light-1;
                     border: 1px solid $color-dark-1;
-                    font-size: 10px;
-                    
-                    .flash-button-text{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
-                }
-
                     &:hover{
                         color: $color-light-1;
                         background-color: $color-dark-1;
@@ -71,26 +61,8 @@
                     }
 
                     
-                #flash-sale-button::before{
-                    content: "";
-                    border-top: 2px solid $color-dark-1;
-                    border-left: 2px solid $color-dark-1;
-                    position: absolute;
-                    bottom: 12px;
-                    right: 12px;
-                    height: 15px;
-                    width: 15px;
                 }
-                #flash-sale-button::after{
-                    content: "";
-                    border-bottom: 2px solid $color-dark-1;
-                    border-right: 2px solid $color-dark-1;
-                    position: absolute;
-                    bottom: 12px;
-                    right: 12px;
-                    height: 15px;
-                    width: 15px;
-                }
+                
             }
         }
     } 

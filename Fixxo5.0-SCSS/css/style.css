@@ -45,6 +45,62 @@ button {
   border: none;
 }
 
+.btn-white {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 12px 40px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  transition: all 0.25s;
+  position: relative;
+}
+.btn-white::before {
+  content: "";
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  height: 20px;
+  width: 20px;
+}
+.btn-white::after {
+  content: "";
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  height: 20px;
+  width: 20px;
+}
+.btn-white:hover {
+  background-color: #222529;
+  color: #f5f5f5;
+  text-decoration: none;
+}
+.btn-white:hover::before {
+  content: "";
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  height: 20px;
+  width: 20px;
+}
+.btn-white:hover::after {
+  content: "";
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  height: 20px;
+  width: 20px;
+}
+
 .btn-theme {
   background-color: #ff7373;
   color: #f5f5f5;
@@ -337,6 +393,8 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   opacity: 0%;
 }
 .featured-products .container .product-grid .product-card-image-container img {
+  width: 255px;
+  height: 210px;
   object-fit: fill;
   display: flex;
   justify-content: center;
@@ -512,7 +570,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   }
 }
 .flash-sale {
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -552,15 +610,12 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   font-size: 13px;
 }
 .flash-sale #flash-sale-box .box-bg .box-border #flash-sale-button {
-  width: 30px;
-  height: 10px;
+  width: 170px;
+  height: 50px;
   position: absolute;
   bottom: 13%;
   right: 25%;
-  color: #000000;
-  background-color: #ffffff;
   border: 1px solid #000000;
-  font-size: 10px;
 }
 .flash-sale #flash-sale-box .box-bg .box-border #flash-sale-button:hover {
   color: #ffffff;
@@ -568,66 +623,52 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   border: 1px solid #ffffff;
   transition: all 0.3s;
 }
-.flash-sale #flash-sale-box .box-bg .box-border #flash-sale-button::before {
-  content: "";
-  border-top: 2px solid #000000;
-  border-left: 2px solid #000000;
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  height: 15px;
-  width: 15px;
-}
-.flash-sale #flash-sale-box .box-bg .box-border #flash-sale-button::after {
-  content: "";
-  border-bottom: 2px solid #000000;
-  border-right: 2px solid #000000;
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  height: 15px;
-  width: 15px;
-}
 
 .new-products {
   display: flex;
   justify-content: center;
-  border: 2px solid red;
 }
 .new-products .new-products-container {
-  margin-top: 100px;
-  max-width: 100%;
+  margin-top: 50px;
+  width: 100%;
   display: flex;
-  justify-content: center;
 }
-.new-products .new-products-container .new-products-box1 {
+.new-products .new-products-container .new-products-box {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: rgb(138, 138, 255);
+  background-color: #BBBBBB;
   margin-right: 30px;
-  width: 560px;
+  width: 750px;
   height: 664px;
+}
+.new-products .new-products-container .new-products-box .text-in-box {
+  font-size: 3em;
+  color: #ffffff;
+  font-weight: 900;
+}
+.new-products .new-products-container .new-products-box #new-products-button {
+  position: absolute;
+  bottom: 30%;
+  width: 210px;
 }
 .new-products .new-products-container #new-products-grid {
   display: grid;
   grid-template-areas: "product0 product1 product2" "product3 product4 product5";
   gap: 20px;
-}
-.new-products .new-products-container #new-products-grid .product-card {
-  width: 255px;
-  height: 320px;
+  width: 50px;
 }
 .new-products .new-products-container #new-products-grid .product-card-image-container {
-  width: 255px;
-  height: 200px;
+  max-width: 200px;
+  max-height: 160px;
   display: flex;
   justify-content: center;
 }
 .new-products .new-products-container #new-products-grid .product-card-image-container img {
-  max-width: 255px;
-  max-height: 210px;
+  max-width: 200px;
+  max-height: 160px;
 }
 .new-products .new-products-container #new-products-grid .product-card-category {
   font-size: 16px;

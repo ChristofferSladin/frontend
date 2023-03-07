@@ -2,56 +2,55 @@
     display: flex;
     justify-content: center;
 
-    border: 2px solid red;
-
-
     .new-products-container{
-        margin-top: 100px;
-        max-width: 100%;
+        margin-top: 50px;
+        width: 100%;
         display: flex;
-        justify-content: center;
         
-        .new-products-box1{
+        .new-products-box{
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
-            background-color: rgb(138, 138, 255);
+            background-color: $color-dark-4;
             margin-right: 30px;
-            width: 560px;
+            width: 750px;
             height: 664px;
             
+            .text-in-box{
+                font-size: 3em;
+                color: $color-light-1;
+                font-weight: $font-weight-black;
+            }
+            #new-products-button{
+                position: absolute;
+                bottom: 30%;
+                width: 210px;
+            }
         }
 
         #new-products-grid{
-            
             display: grid;
             grid-template-areas:
             "product0 product1 product2"
             "product3 product4 product5";
             gap: 20px;
-            
-            .product-card{
-                width: 255px;
-                height: 320px;
-                
-            }
+            width: 50px;
 
             .product-card-image-container{
-                width: 255px;
-                height: 200px;
+                max-width: 200px;
+                max-height: 160px;
                 display: flex;
                 justify-content: center;
     
                 img{
-                    max-width: 255px;
-                    max-height: 210px;
+                    max-width: 200px;
+                    max-height: 160px;
                 }
-
             }
             .product-card-category{
                 font-size: 16px;
-    
             }
             .product-card-title{
                 font-size: 16px;

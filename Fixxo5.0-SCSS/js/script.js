@@ -71,6 +71,20 @@ async function getNewProducts() {
   }
 }
 
+// POPULAR PRODUCTS
+async function getPopularProducts() {
+  try {
+    const response = await fetch('https://kyh-net22.azurewebsites.net/api/products/popular');
+    const data = await response.json();
+    
+    const productsEl = document.getElementById('popular-products-grid');
+    generateProducts(data, 'new', productsEl);
+    
+  } catch (error) {
+    console.error('Error fetching products:', error);
+  }
+}
+
 // NULL PRODUCTS
 async function getNullProducts() {
   try {
