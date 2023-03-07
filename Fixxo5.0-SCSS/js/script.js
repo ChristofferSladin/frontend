@@ -78,7 +78,7 @@ async function getPopularProducts() {
     const data = await response.json();
     
     const productsEl = document.getElementById('popular-products-grid');
-    generateProducts(data, 'new', productsEl);
+    generateProducts(data, 'popular', productsEl);
     
   } catch (error) {
     console.error('Error fetching products:', error);
@@ -91,10 +91,14 @@ async function getNullProducts() {
     const response = await fetch('https://kyh-net22.azurewebsites.net/api/products/');
     const data = await response.json();
     
-    const nullTagProducts = data.filter(product => !product.tag).slice(0, 2);
+    const newNullTagProducts = data.filter(product => !product.tag).slice(0, 2);
+    const popularNullTagProducts = data.filter(product => !product.tag).slice(2, 4);
 
-    const productsEl = document.getElementById('new-products-grid');
-    generateProducts(nullTagProducts, 'null', productsEl);
+    const newProductsEl = document.getElementById('new-products-grid');
+    generateProducts(newNullTagProducts, 'new-null', newProductsEl);
+    
+    const popularProductsEl = document.getElementById('popular-products-grid');
+    generateProducts(popularNullTagProducts, 'popular-null', popularProductsEl);
     
   } catch (error) {
     console.error('Error fetching products:', error);

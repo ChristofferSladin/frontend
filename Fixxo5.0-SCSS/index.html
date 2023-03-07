@@ -11,7 +11,7 @@
     <title>Fixxo.</title>
 </head>
 
-<body onload="getFeaturedProducts(), getNewProducts(), getNullProducts();">
+<body onload="getFeaturedProducts(), getNewProducts(),getPopularProducts(), getNullProducts();">
   
     <!-- header -->
     <header>
@@ -119,15 +119,13 @@
     <div class="popular-products-container">
       <div class="pupolar-products-box">
         <div class="text-in-box">2 FOR USD $29</div>
-        <a href="#" id="popular-products-button" class="btn-white">NEW PRODUCTS</a>
+        <a href="#" id="popular-products-button" class="btn-white">POPULAR PRODUCTS</a>
       </div>
-    <div id="popular-products-grid" class="new-products-collection"></div>
+    <div id="popular-products-grid" class="popular-products-collection"></div>
   </div>
   </section>
 
-
     <button onclick="topFunction()" id="button-scroll" class="totop-arrow"><i class="fa-solid fa-arrow-up"></i></button>
-    
     <script src="js/script.js"></script>
 </body>
 </html>

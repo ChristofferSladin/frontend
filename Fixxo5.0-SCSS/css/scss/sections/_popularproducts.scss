@@ -1,13 +1,13 @@
-.new-products{
+.popular-products{
     display: flex;
     justify-content: center;
 
-    .new-products-container{
+    .popular-products-container{
         margin-top: 50px;
         width: 100%;
         display: flex;
         
-        .new-products-box{
+        .popular-products-box{
             position: relative;
             display: flex;
             align-items: center;
@@ -23,14 +23,14 @@
                 color: $color-light-1;
                 font-weight: $font-weight-black;
             }
-            #new-products-button{
+            #popular-products-button{
                 position: absolute;
                 bottom: 30%;
                 width: 210px;
             }
         }
 
-        #new-products-grid{
+        #popular-products-grid{
             display: grid;
             grid-template-areas:
             "product0 product1 product2"
