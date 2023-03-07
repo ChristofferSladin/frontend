@@ -4,17 +4,21 @@
 
     .popular-products-container{
         margin-top: 50px;
-        width: 100%;
-        display: flex;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        
         
         .popular-products-box{
+            
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
             background-color: $color-dark-4;
-            margin-right: 30px;
+            
             width: 750px;
             height: 664px;
             
@@ -36,7 +40,9 @@
             "product0 product1 product2"
             "product3 product4 product5";
             gap: 20px;
-            width: 50px;
+            width: 664px;
+            margin-left: 50px;
+            
 
             .product-card-image-container{
                 max-width: 200px;

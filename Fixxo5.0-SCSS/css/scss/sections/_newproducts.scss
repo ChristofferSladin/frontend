@@ -4,7 +4,7 @@
 
     .new-products-container{
         margin-top: 50px;
-        width: 100%;
+        max-width: 100%;
         display: flex;
         
         .new-products-box{
@@ -15,7 +15,7 @@
             position: relative;
             background-color: $color-dark-4;
             margin-right: 30px;
-            width: 750px;
+            width: 730px;
             height: 664px;
             
             .text-in-box{
@@ -36,7 +36,7 @@
             "product0 product1 product2"
             "product3 product4 product5";
             gap: 20px;
-            width: 50px;
+            width: 664px;
 
             .product-card-image-container{
                 max-width: 200px;

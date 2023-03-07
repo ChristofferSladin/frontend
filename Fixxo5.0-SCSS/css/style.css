@@ -630,7 +630,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 }
 .new-products .new-products-container {
   margin-top: 50px;
-  width: 100%;
+  max-width: 100%;
   display: flex;
 }
 .new-products .new-products-container .new-products-box {
@@ -641,7 +641,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   position: relative;
   background-color: #BBBBBB;
   margin-right: 30px;
-  width: 750px;
+  width: 730px;
   height: 664px;
 }
 .new-products .new-products-container .new-products-box .text-in-box {
@@ -658,7 +658,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   display: grid;
   grid-template-areas: "product0 product1 product2" "product3 product4 product5";
   gap: 20px;
-  width: 50px;
+  width: 664px;
 }
 .new-products .new-products-container #new-products-grid .product-card-image-container {
   max-width: 200px;
@@ -710,8 +710,9 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 }
 .popular-products .popular-products-container {
   margin-top: 50px;
-  width: 100%;
-  display: flex;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .popular-products .popular-products-container .popular-products-box {
   position: relative;
@@ -720,7 +721,6 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   justify-content: center;
   position: relative;
   background-color: #BBBBBB;
-  margin-right: 30px;
   width: 750px;
   height: 664px;
 }
@@ -738,7 +738,8 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   display: grid;
   grid-template-areas: "product0 product1 product2" "product3 product4 product5";
   gap: 20px;
-  width: 50px;
+  width: 664px;
+  margin-left: 50px;
 }
 .popular-products .popular-products-container #popular-products-grid .product-card-image-container {
   max-width: 200px;
@@ -782,4 +783,15 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 }
 .popular-products .popular-products-container #popular-products-grid #new-product-3 {
   grid-area: product5;
+}
+
+.footer-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-start .line {
+  margin: 50px;
+  border: 1px solid lightgrey;
+  width: 60%;
 }/*# sourceMappingURL=style.css.map */
