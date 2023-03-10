@@ -13,33 +13,29 @@
 
     .footer-display-cards{
 
-        
         display: flex;
         justify-content: space-evenly;
        
         padding-left: 250px;
         padding-right: 250px;
-        padding-bottom: 100px;
-        height: 300px;
+        margin-bottom: 35px;
 
         .footer-card{
 
-       
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: space-around;
-            height: 300px;
             text-align: center;
-            width: 150px;
+            width: 200px;
 
             .position-icons{
                 display: flex;
                 justify-content: center;
                 margin-bottom: 15px;
+
                 .icon-holder{
 
-               
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -58,19 +54,42 @@
                 }
             }
 
-            
-            
             .footer-card-title{
-
-                
-                font-size: 20px;
+                margin-bottom: 15px;
+                font-size: 16px;
                 font-weight: $font-weight-bold;
 
             }
             .footer-card-description{
-
+                margin-bottom: 15px;
+                font-size: 11px;
+                color: grey;
                 text-align: center;
             }
+        }
+    }
+
+    .footer-end{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #f8f8f8;
+        border-top: 1px solid grey;
+
+        .footer-icons-container{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            gap: 20px;
+        }
+
+        .footer-end-text{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+            font-size: 11px;
+            color: grey;
         }
     }
 }

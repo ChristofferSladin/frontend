@@ -817,13 +817,14 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   justify-content: space-evenly;
   padding-left: 250px;
   padding-right: 250px;
-  padding-bottom: 100px;
-  height: 300px;
+  margin-bottom: 35px;
 }
 .footer .footer-display-cards .footer-card {
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   text-align: center;
-  width: 150px;
+  width: 200px;
 }
 .footer .footer-display-cards .footer-card .position-icons {
   display: flex;
@@ -846,9 +847,34 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   font-size: 30px;
 }
 .footer .footer-display-cards .footer-card .footer-card-title {
-  font-size: 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
   font-weight: 700;
 }
 .footer .footer-display-cards .footer-card .footer-card-description {
+  margin-bottom: 15px;
+  font-size: 11px;
+  color: grey;
   text-align: center;
+}
+.footer .footer-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border-top: 1px solid grey;
+}
+.footer .footer-end .footer-icons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  gap: 20px;
+}
+.footer .footer-end .footer-end-text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+  font-size: 11px;
+  color: grey;
 }/*# sourceMappingURL=style.css.map */
