@@ -1,12 +1,77 @@
-.footer-start{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+.footer{
+    .footer-beginning{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        .line{
+            margin: 50px;
+            border: 1px solid lightgrey;
+            width: 60%;
+        }
+    }
 
-    .line{
-        margin: 50px;
-        border: 1px solid lightgrey;
-        width: 60%;
+    .footer-display-cards{
+
+        
+        display: flex;
+        justify-content: space-evenly;
+       
+        padding-left: 250px;
+        padding-right: 250px;
+        padding-bottom: 100px;
+        height: 300px;
+
+        .footer-card{
+
+       
+            
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-around;
+            height: 300px;
+            text-align: center;
+            width: 150px;
+
+            .position-icons{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 15px;
+                .icon-holder{
+
+               
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0px 6px 5px rgba(0,0,0,0.16 );
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    margin-bottom: 10px;
+    
+                    >i{
+                        display: flex;
+                        justify-content: center;
+                        font-size: 30px;
+        
+                    }
+                }
+            }
+
+            
+            
+            .footer-card-title{
+
+                
+                font-size: 20px;
+                font-weight: $font-weight-bold;
+
+            }
+            .footer-card-description{
+
+                text-align: center;
+            }
+        }
     }
 }
+

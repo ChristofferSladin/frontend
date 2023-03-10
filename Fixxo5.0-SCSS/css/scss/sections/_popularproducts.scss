@@ -1,26 +1,22 @@
 .popular-products{
-    display: flex;
-    justify-content: center;
+    
 
     .popular-products-container{
-        margin-top: 50px;
+        margin-top: 40px;
         max-width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
-        
+        justify-self: flex-end;
         
         .popular-products-box{
-            
-            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
             background-color: $color-dark-4;
             
-            width: 750px;
-            height: 664px;
+            height: 550px;
+            margin-left: 25px;
             
             .text-in-box{
                 font-size: 3em;
@@ -30,7 +26,10 @@
             #popular-products-button{
                 position: absolute;
                 bottom: 30%;
-                width: 210px;
+                width: 238px;
+                .text-in-box{
+                    font-size: 13px;
+                }
             }
         }
 
@@ -40,10 +39,14 @@
             "product0 product1 product2"
             "product3 product4 product5";
             gap: 20px;
-            width: 664px;
+            width: 100%;
+            height: 550px;
             margin-left: 50px;
+            padding-right: 40px;
             
-
+            
+            
+            
             .product-card-image-container{
                 max-width: 200px;
                 max-height: 160px;
@@ -51,11 +54,17 @@
                 justify-content: center;
     
                 img{
-                    max-width: 200px;
-                    max-height: 160px;
+                    max-width: 100%;
+                    aspect-ratio: 4/4;
+                    object-fit: contain;
+                    
                 }
             }
+            .product-card{
+                height: 10px;
+            }
             .product-card-category{
+                margin-top: 10px;
                 font-size: 13px;
                 font-weight: $font-weight-regular;
                 color: grey;
@@ -77,16 +86,20 @@
             #null-product-1{
                 grid-area: product1;
             }
-            #new-product-0{
+            #popular-product-0{
                 grid-area: product2;
             }
-            #new-product-1{
+            #popular-product-1{
+                
+                .product-card-title{
+                    font-size: 13px;
+                }
                 grid-area: product3;
             }
-            #new-product-2{
+            #popular-product-2{
                 grid-area: product4;
             }
-            #new-product-3{
+            #popular-product-3{
                 grid-area: product5;
             }
         }
