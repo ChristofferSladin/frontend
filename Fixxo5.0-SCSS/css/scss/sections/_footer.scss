@@ -6,26 +6,23 @@
        
         .line{
             margin: 50px;
+            margin-top: 100px;
             border: 1px solid lightgrey;
             width: 60%;
         }
     }
 
     .footer-display-cards{
-
         display: flex;
         justify-content: space-evenly;
-       
         padding-left: 250px;
         padding-right: 250px;
         margin-bottom: 35px;
 
         .footer-card{
-
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            
             text-align: center;
             width: 200px;
 
@@ -35,7 +32,6 @@
                 margin-bottom: 15px;
 
                 .icon-holder{
-
                     display: flex;
                     justify-content: center;
                     align-items: center;

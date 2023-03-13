@@ -1,0 +1,91 @@
+.contact-form{
+
+    .container{
+        
+        .form-title{
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: $font-weight-bold;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+        }
+
+        .form-parent{
+            
+            .first-2-inputs{
+
+                margin-left: 100px;
+                margin-right: 100px;
+
+                display: flex;
+                justify-content: center;
+                .contact-form-name{
+                    width: 50%;
+                
+                    #name{
+                        width: 94%;
+                        height: 50px;
+                        
+                    }
+                }
+
+                .contact-form-email{
+                    width: 50%;
+
+                    #email{
+                        
+                        width: 94%;
+                        height: 50px;
+                       
+                    }
+                }
+            }
+
+            .comments-parent{
+                
+                margin-left: 100px;
+                margin-right: 100px;
+                .contact-form-comment{
+                
+                   
+                
+                    #comments{
+
+                        height: 200px;
+                        
+                        
+                    }
+                }
+    
+                #form-submit-button{
+                    grid-area: formSubmit;
+                    width: 15%;
+                    margin-bottom: 100px;
+
+                    
+                        > .btn-theme {
+                        padding: 15px 20px 15px 20px;
+                        text-decoration: none;
+                        font-size: 1rem;
+                        display: inline-block;
+                        transition: background-color 0.25s;
+                        position: relative;
+                        }
+                    
+                }
+            }
+        }
+    }
+}
+
+.error-holder{
+    height: 30px;
+    .error{
+        display: none;
+        color: $color-theme;
+    }
+}
+
+

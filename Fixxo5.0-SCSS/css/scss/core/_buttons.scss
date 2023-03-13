@@ -100,5 +100,19 @@ button {
     }
 }
 
+.contact-btn-theme{
+    @include theme-colors;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    transition: background-color 0.25s;
+    position: relative;
+
+    &:hover {
+        @include dark-colors;
+        text-decoration: none;    
+    }
+}
 
 

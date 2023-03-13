@@ -137,6 +137,22 @@ button {
   text-decoration: none;
 }
 
+.contact-btn-theme {
+  background-color: #ff7373;
+  color: #f5f5f5;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  transition: background-color 0.25s;
+  position: relative;
+}
+.contact-btn-theme:hover {
+  background-color: #222529;
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
 .breadcrumb {
   margin-top: 30px;
 }
@@ -451,6 +467,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 }
 .featured-products .container .product-card {
   margin: 15px;
+  box-shadow: 5px 5px 5px 5px #dcdcdc;
 }
 .featured-products .container .product-card p {
   margin: 0;
@@ -809,6 +826,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 }
 .footer .footer-beginning .line {
   margin: 50px;
+  margin-top: 100px;
   border: 1px solid lightgrey;
   width: 60%;
 }
@@ -877,4 +895,76 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   margin-bottom: 12px;
   font-size: 11px;
   color: grey;
+}
+
+.contact-form .container .form-title {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contact-form .container .form-parent .first-2-inputs {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+}
+.contact-form .container .form-parent .first-2-inputs .contact-form-name {
+  width: 50%;
+}
+.contact-form .container .form-parent .first-2-inputs .contact-form-name #name {
+  width: 94%;
+  height: 50px;
+}
+.contact-form .container .form-parent .first-2-inputs .contact-form-email {
+  width: 50%;
+}
+.contact-form .container .form-parent .first-2-inputs .contact-form-email #email {
+  width: 94%;
+  height: 50px;
+}
+.contact-form .container .form-parent .comments-parent {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.contact-form .container .form-parent .comments-parent .contact-form-comment #comments {
+  height: 200px;
+}
+.contact-form .container .form-parent .comments-parent #form-submit-button {
+  grid-area: formSubmit;
+  width: 15%;
+  margin-bottom: 100px;
+}
+.contact-form .container .form-parent .comments-parent #form-submit-button > .btn-theme {
+  padding: 15px 20px 15px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  transition: background-color 0.25s;
+  position: relative;
+}
+
+.error-holder {
+  height: 30px;
+}
+.error-holder .error {
+  display: none;
+  color: #ff7373;
+}
+
+.message-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 250px;
+  margin-bottom: 280px;
+}
+.message-holder .succes-message {
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+.message-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 250px;
+    margin-bottom: 280px;
+
+    .succes-message{
+        letter-spacing: 2px;
+        font-size: 25px;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+}
