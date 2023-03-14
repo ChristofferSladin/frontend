@@ -1,7 +1,7 @@
 .featured-products{
-    margin-top: 40px;
     margin: 0;
     padding: 0;
+    margin-top: 40px;
     .container{
         max-width: 1110px;
         > .title{
@@ -12,10 +12,34 @@
             margin-bottom: 30px;
         }
 
-        //box-shadow: 10px 10px 8px 10px #888888;
         .product-grid{
             display: flex;
             justify-content: center;
+
+            #product-0{
+                grid-area: product0;
+            }
+            #product-1{
+                grid-area: product1;
+            }
+            #product-2{
+                grid-area: product2;
+            }
+            #product-3{
+                grid-area: product3;
+            }
+            #product-4{
+                grid-area: product4;
+            }
+            #product-5{
+                grid-area: product5;
+            }
+            #product-6{
+                grid-area: product6;
+            }
+            #product-7{
+                grid-area: product7;
+            } 
 
             .product-card-image-container{
                 display: flex;
@@ -95,7 +119,7 @@
 
             .product-card{
                 margin: 15px;
-                box-shadow: 5px 5px 5px 5px #dcdcdc;
+                // box-shadow: 5px 5px 5px 5px #dcdcdc;
                 p{
                     margin: 0;
                 }
@@ -136,10 +160,10 @@
         }
     }
 
-@include md{
+@include lg{
     .featured-products {
         .product-grid{
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
 
             #product-container{
                 display: grid;
@@ -213,7 +237,7 @@
     }   
 }
 
-@include lg{
+@include md{
     .featured-products {
         margin-top: 110px;
         .product-grid{
@@ -222,31 +246,6 @@
                 grid-template-areas: 
                 "product0 product1 product2 product3" 
                 "product4 product5 product6 product7";
-
-                #product-0{
-                    grid-area: product0;
-                }
-                #product-1{
-                    grid-area: product1;
-                }
-                #product-2{
-                    grid-area: product2;
-                }
-                #product-3{
-                    grid-area: product3;
-                }
-                #product-4{
-                    grid-area: product4;
-                }
-                #product-5{
-                    grid-area: product5;
-                }
-                #product-6{
-                    grid-area: product6;
-                }
-                #product-7{
-                    grid-area: product7;
-                } 
             }     
         }
     }

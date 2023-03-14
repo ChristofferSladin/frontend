@@ -90,3 +90,18 @@
     }
 }
 
+@include bp-md{
+
+    .footer{
+
+        .footer-display-cards{
+            display: flex;
+            justify-content: space-evenly;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 35px;
+        }
+    }
+    
+
+}
