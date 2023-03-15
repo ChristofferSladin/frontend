@@ -13,8 +13,6 @@
         }
 
         .product-grid{
-            display: flex;
-            justify-content: center;
 
             #product-0{
                 grid-area: product0;
@@ -119,7 +117,6 @@
 
             .product-card{
                 margin: 15px;
-                // box-shadow: 5px 5px 5px 5px #dcdcdc;
                 p{
                     margin: 0;
                 }
@@ -131,7 +128,7 @@
                 .product-card-category{
                     text-align: center;
                     font-size: 16px;
-                    font-weight: 700;
+                    font-weight: $font-weight-regular;
                     color: #616365;
                     margin-top: 15px;
                 }

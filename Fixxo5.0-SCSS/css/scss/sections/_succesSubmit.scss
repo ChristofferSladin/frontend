@@ -12,4 +12,21 @@
         font-weight: 900;
         margin-bottom: 15px;
     }
+    .message-to-customer{
+        font-size: 14px;
+    }
+
+}
+
+@include bp-md{
+
+    .message-holder{
+        .succes-message{
+            letter-spacing: 0;
+            font-size: 20px;
+        }
+        .message-to-customer{
+            font-size: 12px;
+        }
+    }
 }
