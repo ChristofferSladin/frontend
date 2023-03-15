@@ -8,8 +8,7 @@ const validateName = (value) => {
     if (value.length < 2){
         nameError.style.display = 'block';
         return true
-    }
-        
+    }  
     else
         nameError.style.display = 'none';
         return false
@@ -22,7 +21,6 @@ const validateEmail = (value) => {
         emailError.style.display = 'block';
         return true
     }
-        
     else
         emailError.style.display = 'none';
         return false
@@ -33,25 +31,10 @@ const validateComment = (value) => {
     if (value.length < 5){
         commentsError.style.display = 'block';
         return true
-    }
-        
+    }  
     else
         commentsError.style.display = 'none';
         return false
-}
-
-const validate = (e) => {    
-    switch(e.target.type) {
-        case 'email':
-            validateEmail(e.target.value)
-            break;
-        case 'text':
-            validateName(e.target.value)
-            break;
-        case 'textarea': 
-            validateComment(e.target.value)
-            break;
-    }
 }
 
 nameInput.addEventListener('keyup', (e) => validateName(e.target.value.trim()));
@@ -66,6 +49,7 @@ async function handleSubmit(event) {
     const form = event.target;
   
     if (!form.checkValidity()) {
+      alert('Oops something went wrong');
       return;
     }
   
@@ -75,7 +59,7 @@ async function handleSubmit(event) {
   
     const contactForm = { name, email, comments };
   
-    await fetch('https://kyh-net22.azurewebsites.net/api/contacts', {
+    fetch('https://kyh-net22.azurewebsites.net/api/contacts', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -90,5 +74,3 @@ async function handleSubmit(event) {
       }
     });
 }
-  
-  
