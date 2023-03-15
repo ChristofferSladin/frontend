@@ -5,7 +5,7 @@
     flex-direction: column;
     margin-top: 250px;
     margin-bottom: 280px;
-
+    
     .succes-message{
         letter-spacing: 2px;
         font-size: 25px;
@@ -15,11 +15,9 @@
     .message-to-customer{
         font-size: 14px;
     }
-
 }
 
 @include bp-md{
-
     .message-holder{
         .succes-message{
             letter-spacing: 0;

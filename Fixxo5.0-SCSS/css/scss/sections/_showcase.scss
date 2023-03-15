@@ -11,12 +11,10 @@
     .title-3{
         font-size: 1em;
     }
-
     .btn-theme{
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -43,9 +41,7 @@
             object-fit: fit;
         }
     }
-    
 }
-
 
 @include lg{
     .showcase{
@@ -79,9 +75,7 @@
     .title-3 {
         font-size: 1.5em;
     }
-    
     .showcase .column-2 img {
         height: 700px;
     }
-    
 }

@@ -11,7 +11,6 @@
             width: 60%;
         }
     }
-
     .footer-display-cards{
         display: flex;
         justify-content: space-evenly;
@@ -91,9 +90,7 @@
 }
 
 @include bp-md{
-
     .footer{
-
         .footer-display-cards{
             display: flex;
             justify-content: space-evenly;
@@ -102,6 +99,4 @@
             margin-bottom: 35px;
         }
     }
-    
-
 }
