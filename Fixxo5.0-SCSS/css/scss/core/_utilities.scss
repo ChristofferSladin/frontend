@@ -18,6 +18,12 @@ html, body {
     }
 }
 
+@include bp-md{
+    .totop-arrow{
+        right: 15px;
+    }
+}
+
 .menu-badge {
     @include theme-colors;
     @include content-center;
@@ -29,4 +35,3 @@ html, body {
     border-radius: 50%;
     font-size: 0.8rem;
 }
-

@@ -70,6 +70,7 @@
         justify-content: center;
         background-color: #f8f8f8;
         border-top: 1px solid grey;
+        position: relative;
 
         .footer-icons-container{
             display: flex;
@@ -77,6 +78,17 @@
             margin-bottom: 15px;
             margin-top: 15px;
             gap: 20px;
+
+            .social-media-icons{
+                text-decoration: none;
+                color: black;
+                margin: 0;
+
+                &:hover{
+                    font-size: 20px;
+                    margin-bottom: -20px;
+                }
+            }
         }
 
         .footer-end-text{
@@ -85,6 +97,7 @@
             margin-bottom: 12px;
             font-size: 11px;
             color: grey;
+            
         }
     }
 }

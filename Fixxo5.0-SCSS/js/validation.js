@@ -49,7 +49,7 @@ async function handleSubmit(event) {
     const form = event.target;
   
     if (!form.checkValidity()) {
-      alert('Oops something went wrong');
+      alert('Fill the form with valid information');
       return;
     }
   

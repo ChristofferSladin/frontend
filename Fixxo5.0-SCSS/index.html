@@ -9,28 +9,25 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Fixxo.</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon_io/favicon.ico">
 </head>
 
 <body onload="getFeaturedProducts(), getNewProducts(), getPopularProducts(), getNullProducts();">
   
-    <!-- header -->
+    <!-- HEADER -->
+
     <header>
         <div class="container">
             <a id="logotype" class="logotype" href="index.html">Fixxo.</a>
-
             <div id="menu" class="collapse">
                 <nav id="menu-links" class="menu-links">
                     <a class="menu-link" href="index.html">Home</a>
-                    <!-- <a class="menu-link" href="#">Products</a> -->
                     <a class="menu-link" href="contact.html">Contacts</a>
                 </nav>
-                
                 <nav id="menu-icons" class="menu-icons">
                     <a class="menu-link" href="#"><i class="fa-regular fa-search"></i>
-                      
                     <a class="menu-link" href="#">
                         <i class="fa-regular fa-code-compare"></i>
-                        
                     </a>
                     <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i>
                       <span class="menu-badge">6</span></a></a>
@@ -40,7 +37,6 @@
                     </a>
                 </nav>
             </div>
-
             <div id="toggle-icon" class="menu-icons">
                 <button class="menu-link" data-bs-toggle="collapse" data-bs-target="#menu">
                     <i class="fa-regular fa-bars"></i>
@@ -49,7 +45,8 @@
         </div>
     </header>
     
-    <!-- showcase -->
+    <!-- SHOWCASE -->
+
     <section class="showcase">
         <div class="container">
             <div class="column-1">
@@ -66,7 +63,7 @@
         </div>
     </section>
 
-        <!-- featured products -->
+   <!-- FEATURED PRODUCTS -->
 
   <section id="featured-products" class="featured-products">
       <div class="container">
@@ -85,7 +82,6 @@
           <img src="images/office-style.png" alt="office style">
         </a>
       </div>
-      
         <div id="flash-sale-box">
           <div class="box-bg">
             <div class="box-border">
@@ -95,7 +91,6 @@
             </div>
           </div>
         </div>
-      
       <div id="party-style">
         <a href="#" class="flash-sale-img">
           <img src="images/party-style.png" alt="">
@@ -103,30 +98,26 @@
       </div>
   </section>
   
- <!-- NEW SECTION -->
+ <!-- NEW AND POPULAR SECTION -->
 
   <div class="new-n-popular-grid-holder">
 
      <!-- NEW PRODUCTS -->
+
     <div class="new-products-box">
       <div class="text-in-box">2 FOR USD $29</div>
       <a href="#" id="new-products-button" class="btn-white">NEW PRODUCTS</a>
     </div>
-
   <div id="new-products-grid"></div>
 
-<!-- POPULAR PRODUCTS -->
+      <!-- POPULAR PRODUCTS -->
 
-    
     <div id="popular-products-grid"></div>
-
     <div class="popular-products-box">
       <div class="text-in-box">2 FOR USD $49</div>
       <a href="#" id="popular-products-button" class="btn-white">POPULAR PRODUCTS</a>
     </div>
   </div>
-      
-
 
   <!-- FOOTER -->
 
@@ -134,70 +125,55 @@
     <div class="footer-beginning">
       <div class="line"></div>
     </div>
-
     <div class="footer-display-cards">
-
       <div class="footer-card">
         <div class="position-icons">
           <nav class="icon-holder">
             <i class="fa-light fa-headset"></i>
           </nav>
         </div>
-        
         <div class="footer-card-title">Customer Support</div>
         <div class="footer-card-description">Call us anytime. Cusomer support available 24/7.</div>
       </div>
-
       <div class="footer-card">
        <div class="position-icons">
         <nav class="icon-holder">
           <i class="fa-light fa-money-check-dollar"></i>
         </nav>
       </div>
-  
         <div class="footer-card-title">Secure Payment</div>
         <div class="footer-card-description">We care about our customers integrity on our website.</div>
       </div>
-
       <div class="footer-card">
         <div class="position-icons">
           <nav class="icon-holder">
             <i class="fa-light fa-truck"></i>
           </nav>
         </div>
-        
         <div class="footer-card-title">Free Home Delivery</div>
         <div class="footer-card-description">Delivery right to your door with our professionals</div>
       </div>
-
       <div class="footer-card">
         <div class="position-icons">
           <nav class="icon-holder">
             <i class="fa-light fa-truck"></i>
           </nav>
         </div>
-        
         <div class="footer-card-title">30 Days Return</div>
         <div class="footer-card-description">You have the right to return products within 30 days.</div>
       </div>
-
     </div>
-
     <div class="footer-end">
       <div class="footer-icons-container">
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-google"></i>
-        <i class="fa-brands fa-linkedin"></i>
-
-
+        <a href="#" class="social-media-icons"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social-media-icons"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-media-icons"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="social-media-icons"><i class="fa-brands fa-google"></i></a>
+        <a href="#" class="social-media-icons"><i class="fa-brands fa-linkedin"></i></a>
       </div>
       <div class="footer-end-text">© 2023 Fixxo. All Rights Reserved</div>
     </div>
   </section>
-
-  
     <button onclick="topFunction()" id="button-scroll" class="totop-arrow"><i class="fa-solid fa-arrow-up"></i></button>
     <script src="js/script.js"></script>
 </body>
