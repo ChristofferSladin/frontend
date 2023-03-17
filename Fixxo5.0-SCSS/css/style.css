@@ -325,6 +325,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 .showcase .btn-theme {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  font-size: 14px;
 }
 .showcase .container {
   display: grid;
@@ -360,6 +361,11 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   }
   .showcase .title-3 {
     font-size: 1.1;
+  }
+  .showcase .btn-theme {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
   }
   .showcase .column-2 {
     display: block;
@@ -424,6 +430,8 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   grid-area: product7;
 }
 .featured-products .container .product-grid .product-card-image-container {
+  margin-left: 50px;
+  margin-right: 50px;
   display: flex;
   justify-content: center;
   max-width: 100%;
@@ -435,7 +443,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   opacity: 0%;
 }
 .featured-products .container .product-grid .product-card-image-container img {
-  max-width: 100%;
+  width: 100%;
   height: 210px;
   object-fit: fill;
   display: flex;
@@ -586,6 +594,14 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   .featured-products .product-grid #product-container {
     display: grid;
     grid-template-areas: "product0 product1 product2 product3" "product4 product5 product6 product7";
+  }
+  .featured-products .product-grid #product-container .product-card-image-container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    position: relative;
+    max-height: 100%;
   }
 }
 .flash-sale {
@@ -954,7 +970,8 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
     color: #ff7373;
   }
 }
-.message-holder {
+.submit-body .message-holder {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -962,14 +979,19 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   margin-top: 250px;
   margin-bottom: 280px;
 }
-.message-holder .succes-message {
+.submit-body .message-holder .succes-message {
   letter-spacing: 2px;
   font-size: 25px;
   font-weight: 900;
   margin-bottom: 15px;
 }
-.message-holder .message-to-customer {
+.submit-body .message-holder .message-to-customer {
   font-size: 14px;
+}
+.submit-body > .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -1019,7 +1041,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   margin-right: 20px;
 }
 .new-n-popular-grid-holder #new-products-grid > .product-card .product-card-image-container {
-  max-width: 100%;
+  max-width: 90%;
   max-height: 100%;
   position: relative;
 }
@@ -1028,7 +1050,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   opacity: 0%;
 }
 .new-n-popular-grid-holder #new-products-grid > .product-card .product-card-image-container img {
-  max-width: 100%;
+  width: 100%;
   height: 200px;
   object-fit: fill;
   display: flex;
@@ -1164,7 +1186,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   opacity: 0%;
 }
 .new-n-popular-grid-holder #popular-products-grid > .product-card .product-card-image-container img {
-  max-width: 100%;
+  width: 100%;
   height: 200px;
   object-fit: fill;
   display: flex;
@@ -1277,6 +1299,9 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
     height: 400px;
     width: 100%;
   }
+  .new-n-popular-grid-holder .new-products-box .text-in-box {
+    font-size: 2.5em;
+  }
   .new-n-popular-grid-holder #new-products-grid {
     grid-area: newproductgrid;
     width: 100%;
@@ -1286,7 +1311,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
     grid-template-areas: "product0" "product1" "product2" "product3" "product4" "product5";
   }
   .new-n-popular-grid-holder #new-products-grid > .product-card {
-    margin-right: 0px;
+    margin-right: -25px;
     justify-self: center;
   }
   .new-n-popular-grid-holder .popular-products-box {
@@ -1299,6 +1324,9 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
     background-color: #BBBBBB;
     width: 100%;
     height: 400px;
+  }
+  .new-n-popular-grid-holder .popular-products-box .text-in-box {
+    font-size: 2.5em;
   }
   .new-n-popular-grid-holder #popular-products-grid {
     grid-area: popularproductsgrid;

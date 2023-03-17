@@ -14,6 +14,7 @@
     .btn-theme{
         margin-top: 1rem;
         margin-bottom: 1rem;
+        font-size: 14px;
     }
     .container {
         display: grid;
@@ -53,6 +54,11 @@
         }
         .title-3{
             font-size: 1.1;
+        }
+        .btn-theme{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 20px;
         }
         .column-2{
             display: block;

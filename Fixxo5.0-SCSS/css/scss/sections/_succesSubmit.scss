@@ -1,19 +1,29 @@
-.message-holder{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 250px;
-    margin-bottom: 280px;
-    
-    .succes-message{
-        letter-spacing: 2px;
-        font-size: 25px;
-        font-weight: 900;
-        margin-bottom: 15px;
+
+.submit-body{
+
+    .message-holder{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 250px;
+        margin-bottom: 280px;
+        
+        .succes-message{
+            letter-spacing: 2px;
+            font-size: 25px;
+            font-weight: 900;
+            margin-bottom: 15px;
+        }
+        .message-to-customer{
+            font-size: 14px;
+        }
     }
-    .message-to-customer{
-        font-size: 14px;
+    >.footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 }
 

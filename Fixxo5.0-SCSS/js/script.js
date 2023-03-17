@@ -133,14 +133,14 @@ async function getFeaturedProducts() {
     const innerHTML = `
       <div class="product-card-image-container">
         <img src="${product.imageUrl}" alt="${product.name}"/>
-        <div class="product-card-menu">
+        
           <nav class="menu-icons">
             <a class="menu-link" href="#"><i class="fa-regular fa-code-compare"></i></a>
             <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
             <a class="menu-link" href="#"><i class="fa-regular fa-bag-shopping"></i></a>                   
           </nav>
           <a href="#" id="btn-quick-view" class="btn-theme">QUICK VIEW</a>
-        </div>
+        
       </div>
       <h2 class="product-card-category">${product.category}</h2>
       <h2 class="product-card-title">${product.name}</h2>
