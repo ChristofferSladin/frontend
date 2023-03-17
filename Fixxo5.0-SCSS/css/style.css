@@ -1019,11 +1019,11 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 }
 
 @media (max-width: 769px) {
-  .message-holder .succes-message {
+  .submit-body .message-holder .succes-message {
     letter-spacing: 0;
     font-size: 20px;
   }
-  .message-holder .message-to-customer {
+  .submit-body .message-holder .message-to-customer {
     font-size: 12px;
   }
 }

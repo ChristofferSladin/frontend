@@ -28,13 +28,16 @@
 }
 
 @include bp-md{
-    .message-holder{
-        .succes-message{
-            letter-spacing: 0;
-            font-size: 20px;
-        }
-        .message-to-customer{
-            font-size: 12px;
+    .submit-body{
+        .message-holder{
+            .succes-message{
+                letter-spacing: 0;
+                font-size: 20px;
+            }
+            .message-to-customer{
+                font-size: 12px;
+            }
         }
     }
+    
 }
