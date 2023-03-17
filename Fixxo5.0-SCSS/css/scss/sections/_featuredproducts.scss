@@ -159,6 +159,32 @@
         }
     }
 
+
+
+@include md{
+    .featured-products {
+        margin-top: 110px;
+        .product-grid{
+            #product-container{
+                display: grid;
+                grid-template-areas: 
+                    "product0 product1"
+                    "product2 product3"
+                    "product4 product5"
+                    "product6 product7";
+                .product-card-image-container{
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    max-width: 100%;
+                    position: relative;
+                    max-height: 100%;
+                }
+            }     
+        }
+    }
+}
+
 @include lg{
     .featured-products {
         .product-grid{
@@ -167,11 +193,9 @@
             #product-container{
                 display: grid;
                     grid-template-areas: 
-                    "product0 product1"
-                    "product2 product3"
-                    "product4 product5"
-                    "product6 product7";
-
+                    "product0 product1 product2 product3" 
+                    "product4 product5 product6 product7";
+                    
                     .product-card-image-container{
                         position: relative;
                         max-height: 100%;
@@ -234,28 +258,6 @@
             }
         }
     }   
-}
-
-@include md{
-    .featured-products {
-        margin-top: 110px;
-        .product-grid{
-            #product-container{
-                display: grid;
-                grid-template-areas: 
-                "product0 product1 product2 product3" 
-                "product4 product5 product6 product7";
-                .product-card-image-container{
-                    margin: 0;
-                    display: flex;
-                    justify-content: center;
-                    max-width: 100%;
-                    position: relative;
-                    max-height: 100%;
-                }
-            }     
-        }
-    }
 }
  
 

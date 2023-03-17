@@ -38,9 +38,10 @@
             
             > .product-card{
                 margin-right: 20px;
+                max-width: 245px ;
             
                 .product-card-image-container{
-                    max-width: 90%;
+                    max-width: 100%;
                     max-height: 100%;
                     position: relative;
                     
@@ -304,6 +305,81 @@
         #popular-product-3{
             grid-area: product5;
         } 
+    }
+}
+
+@include bp-lg{
+    .new-n-popular-grid-holder{
+        max-width: 100%;
+        display: grid;
+        grid-template-areas: 
+        "newproductbox"
+        "newproductgrid"
+        "popularproductsbox"
+        "popularproductsgrid";
+        gap: 20px;
+            .new-products-box{
+                grid-area: newproductbox;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-self: flex-end;
+                background-color: $color-dark-4;
+                height: 400px;
+                width: 100%;
+
+                .text-in-box{
+                    font-size: 2.5em;
+                }
+            }
+            #new-products-grid{
+                grid-area: newproductgrid;
+                width: 100%;
+                gap: 20px;
+                text-align: center;
+                display: grid;
+                grid-template-areas:
+                "product0 product1"
+                "product2 product3"
+                "product4 product5";
+                > .product-card{
+                    margin-right: -25px;
+                    justify-self: center;
+                }      
+            }
+        .popular-products-box{
+            grid-area: popularproductsbox;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            justify-self: flex-start;
+            background-color: $color-dark-4;
+            width: 100%;
+            height: 400px;
+
+            .text-in-box{
+                font-size: 2.5em;
+            }
+        }
+        #popular-products-grid{
+            grid-area: popularproductsgrid;
+            text-align: center;
+            justify-self: flex-end;
+            width: 100%;
+            gap: 20px;
+            display: grid;
+            grid-template-areas:
+            "product0 product1"
+            "product2 product3"
+            "product4 product5";
+            
+            > .product-card{
+                justify-self: center;
+                margin: 0px;
+            }
+        }
     }
 }
 
